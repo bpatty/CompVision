@@ -79,27 +79,15 @@ int main() {
      uchar pixelBlue = image.at<Vec3b>(y,x)[0];
      uchar pixelGreen = image.at<Vec3b>(y,x)[1];
      uchar pixelRed = image.at<Vec3b>(y,x)[2];
-     if (pixelBlue>200) {
-       image.at<Vec3b>(y,x)[0]=255;
-       image.at<Vec3b>(y,x)[1]=255;
-       image.at<Vec3b>(y,x)[2]=255;
-     }
-     else {
-       image.at<Vec3b>(y,x)[0]=0;
-       image.at<Vec3b>(y,x)[1]=0;
-       image.at<Vec3b>(y,x)[2]=0;
- } } }
 
-
-
+   }
+  }
+}
 
  histofunc(imread("mandrillRGB.jpg", 1),"corrupt0");
-  waitKey(0);
+ waitKey(0);
 
-  //Save thresholded image
-  imwrite("colourthr.jpg", image);
-
-
-
+ //Save thresholded image
+ imwrite("colourthr.jpg", image);
   return 0;
 }
