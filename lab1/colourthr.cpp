@@ -42,7 +42,7 @@ int main() {
         image.at<Vec3b>(y,x)[0]=255;
       }
       else{
-        image.at<Vec3b>(y,x)[0]=0;
+        image.at<Vec3b>(ywor,x)[0]=0;
       }
       if(pixelGreen<128){
         image.at<Vec3b>(y,x)[1]=255;
