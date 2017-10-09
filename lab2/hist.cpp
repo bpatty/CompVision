@@ -83,7 +83,6 @@ int main() {
    }
   }
 }
-
  histofunc(imread("mandrillRGB.jpg", 1),"corrupt0");
  waitKey(0);
 

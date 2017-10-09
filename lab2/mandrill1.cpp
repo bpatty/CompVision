@@ -23,6 +23,7 @@ int main() {
       image1.at<Vec3b>(y,x)[2]=image.at<Vec3b>(y-30,x-30)[2];
     }
   }
+
   imwrite("man1.jpg",image1);
   return 0;
   }

@@ -27,8 +27,6 @@ int main() {
     }
   }
 
-i
-
   imwrite("man0.jpg",image);
   return 0;
 }
